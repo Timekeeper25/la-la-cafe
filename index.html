@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---
+        - primary meta tags
+    --->
+    <title>La La Café - The Best Café in Town</title>
+    <meta name="title" content="La La Café - The Best Café in Town" />
+    <meta name="description" content="This is a Café html made by Us" />
+
+    <!---
+        - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!---
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&
+    display=swap"
+      rel="stylesheet"
+    />
+
+    <!---
+      - custon css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!---
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!---
+      - #PRELOADER
+    -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">La La Café</p>
+    </div>
+
+    <!---
+      - #TOP BAR
+    -->
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">La Café, Caffétopia, Paris 7842, France</span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 6:00 AM to 10:00 PM</span>
+        </div>
+
+        <a href="tel:+3344557788" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">+33 44 55 7788</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:info@lalacafe.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">info@lalacafe.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!---
+      - #HEADER
+    -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="160"
+            heigh="50"
+            alt="La La Café - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              width="160"
+              heigh="50"
+              alt="La La Café - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us </span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Our Chefs</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              La Café, Caffétopia, <br />
+              Paris 7842, France
+            </address>
+
+            <p class="body-4 navbar-text">Open: 8:30 AM - 6:30 PM</p>
+
+            <a href="mailto:reservation@lalacafe.com" class="body-4 sidebar-link">reservation@lalacafe.com</a>
+          
+            <div class="separator"></div>
+
+            <p class="contact-label">Reservation Request</p>
+
+            <a
+            href="tel:+33123123456"
+            class="body-1 contact-number hover-underline">
+            +33-123-123456
+          </a>
+        </nav>
+
+        <a href="#" class="btn btn-secondary">
+          <span class="text text-1">Find A Table</span>
+
+          <span class="text text-2" aria-hidden="true">Find A Table</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+
+
+
+    <main>
+      <article>
+
+        <!---
+          - #HERO
+        -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+
+            <li class="slider-item active" data-hero-slider-item>
+
+
+              <div class="slider-bg">
+                <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt=""
+                class="img-cover">
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">Classic & Aesthetic</p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Pour l'amour de <br>
+                nourriture délicieuse 
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Savour the joie de vivre of France at our La La Café
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+              </a>
+
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+
+
+              <div class="slider-bg">
+                <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt=""
+                class="img-cover">
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">Enchanting Experience</p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Saveurs inspirées par <br>
+                les saisons
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Savour the joie de vivre of France at our La La Café
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+              </a>
+
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+
+
+              <div class="slider-bg">
+                <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt=""
+                class="img-cover">
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Où chaque saveur <br>
+                raconte une histoire
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Savour the joie de vivre of France at our La La Café
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+              </a>
+
+            </li>
+
+
+          </ul>
+
+
+          <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
+          <a href="#" class="hero-btn has-after">
+            <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+            <span class="label-2 text-center span">Book A Table</span>
+          </a>
+          
+
+        </section>
+
+
+
+        <!---
+          - #SERVICE
+        -->
+
+        <section class="section service bg-black-10 text-center" aria-label="service">
+          <div class="container">
+
+            <p class="section-subtitle label-2">Saveur pour la Royauté</p>
+
+            <h2 class="headline-1 section-title">Service de Qualité Supérieure</h2>
+
+            <p class="section-text">
+              Sip perfection at our café, where flavors enchant and satisfaction reigns. 
+              Delight in exquisite offerings that awaken your senses.
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="service-card">
+
+                  <a href="#" class="has-before hover:shine">
+                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                      <img src="./assets/images/service-1.jpg" width="285" height="336" 
+                      loading="lazy" alt="Breakfast" 
+                      class="img-cover">
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+
+                    <h3 class="title-4 card-title">
+                      <a href="#">Breakfast</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+
+                  <a href="#" class="has-before hover:shine">
+                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                      <img src="./assets/images/service-2.jpg" width="285" height="336" 
+                      loading="lazy" alt="Appetizers" class="img-cover">
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+
+                    <h3 class="title-4 card-title">
+                      <a href="#">Appetizers</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+
+                  <a href="#" class="has-before hover:shine">
+                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                      <img src="./assets/images/service-3.jpg" width="285" height="336" 
+                      loading="lazy" alt="Beverages" class="img-cover">
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+
+                    <h3 class="title-4 card-title">
+                      <a href="#">Beverages</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" 
+            alt="shape" 
+              class="shape shape-1 move-anim">
+
+              <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" 
+            alt="shape" 
+              class="shape shape-2 move-anim">
+
+          </div>
+        </section>
+
+
+
+
+        <!---
+          - #ABOUT
+        -->
+
+        <section class="section about text-center" aria-labelledby="about-label" id="about">
+          <div class="container">
+
+            <div class="about-content">
+
+              <p class="label-2 section-subtitle" id="about-label">Notre histoire</p>
+
+              <h2 class="headline-1 section-title">Chaque Saveur Raconte une Histoire</h2>
+              
+              <p class="section-text">
+                "La La Café is simply a delightful representation of the coffee and establishment industry. 
+                La La Café has been the vintage script of the industry ever since an unknown barista took a gallery of cappuccino and frothed it to create a coffee masterpiece. 
+                It has not only survived five centuries but also leaped into the present era."
+              </p>
+
+              <div class="contact-label">Book Through Call</div>
+
+              <a href="tel:+337001325434" class="body-1 contact-number hover-underline">+33
+                (700) 132 5434</a>
+
+                <a href="#" class="btn btn-primary">
+                  <span class="text text-1">Read More</span>
+                  
+                  <span class="text text-2" aria-hidden="true">Read More</span>
+                </a>
+
+            </div>
+
+            <figure class="about-banner">
+
+              <img src="./assets/images/about-banner.jpg" width="570" height="570"
+               loading="lazy" alt="about banner" 
+                  class="w-100" data-parallax-item data-parallax-speed="1">
+
+                  <div class="abs-img abs-img-1 has-before" data-parallax-item
+                  data-parallax-speed="1.75">
+                    <img src="./assets/images/about-abs-image.jpg" width="285" height="285"
+                     loading="lazy" alt="" 
+                        class="w-100">
+                  </div>
+
+                  <div class="abs-img abs-img-2 has-before">
+                    <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy"
+                     alt="">
+                  </div>
+
+                  
+
+                </figure>
+
+                <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" 
+                  alt="" class="shape">
+
+             </div>
+           </section>
+
+
+
+
+
+
+           <!---
+            - #SPECIAL DISH  
+          --->
+
+          <section class="special-dish text-center" aria-labelledby="dish-label">
+
+            <div class="special-dish-banner">
+              <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" 
+              loading="lazy" alt="special dish" 
+                class="img-cover">
+            </div>
+
+            <div class="special-dish-content bg-black-10">
+              <div class="container">
+
+                <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" 
+                alt="badge" class="abs-img">
+
+                <p class="section-subtitle label-2">Spécial Plat</p>
+
+                <h2 class="headline-1 section-title">Friesty's Complete Meal & Lunch</h2>
+
+                <p class="section-text">
+                  Friesty's Complete Meal & Lunch is a culinary masterpiece setting the industry standard, renowned for flavors and presentation. 
+                  Since creation, it delights palates, earning a well-deserved culinary reputation.
+                </p>
+
+                <div class="wrapper">
+                  <del class="del body-3">$35.00</del>
+                  
+                  <span class="span body-1">$30.00</span>
+                </div>
+
+                <a href="#" class="btn btn-primary">
+                  <span class="text text-1">View All Menu</span>
+
+                  <span class="text text-2" aria-hidden="true">View All Menu</span>
+                </a>
+
+              </div>
+            </div>
+
+            <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" 
+            alt="" class="shape shape-1">
+
+            <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" 
+            alt="" class="shape shape-2">
+
+          </section>
+
+
+
+
+          <!---
+            - #MENU
+          -->
+
+          <section class="section menu" aria-label="menu-label" id="menu">
+            <div class="container">
+
+              <p class="section-subtitle text-center label-2">Sélection Spéciale</p>
+
+              <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+              <ul class="grid-list">
+
+                <li>
+                  <div class="menu-card hover:card">
+
+                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                      <img src="./assets/images/menu-1.png" width="100" height="100" 
+                      loading="lazy" alt="Greek Salad" 
+                        class="img-cover">
+                    </figure>
+
+                    <div>
+
+                      <div class="title-wrapper">
+                        <h3 class="title-3">
+                          <a href="#" class="card-title">Sunny Side-Up</a>
+                        </h3>
+
+                        <span class="badge label-1">Seasonal</span>
+
+                        <span class="span title-2">$8.50</span>
+
+                      </div>
+
+                      <p class="card-text label-1">
+                        Enjoy a delightful breakfast or brunch with a satisfying combination of toasted wheat bread, topped with a perfectly fried egg, accompanied by creamy sliced avocado. The dish is elevated with a touch of zesty pepperbell and a sprinkling of freshly ground pepper, adding a burst of flavor to every bite.
+                      </p>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+
+                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                      <img src="./assets/images/menu-2.png" width="100" height="100" 
+                      loading="lazy" alt="Lasagna" 
+                        class="img-cover">
+                    </figure>
+
+                    <div>
+
+                      <div class="title-wrapper">
+                        <h3 class="title-3">
+                          <a href="#" class="card-title">Tropical Lime & Basil Shrimp</a>
+                        </h3>
+
+                        <span class="span title-2">$20.50</span>
+
+                      </div>
+
+                      <p class="card-text label-1">
+                        Immerse yourself in a world of culinary delight as you savor the tantalizing flavors that await you in every succulent bite of our grilled shrimp. Prepare to be enchanted by the refreshing tang of sliced lime, which adds a zesty twist to each mouthwatering morsel. 
+                      </p>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+
+                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                      <img src="./assets/images/menu-3.png" width="100" height="100" 
+                      loading="lazy" alt="Butternut Pumpkin" 
+                        class="img-cover">
+                    </figure>
+
+                    <div>
+
+                      <div class="title-wrapper">
+                        <h3 class="title-3">
+                          <a href="#" class="card-title">Grilled Steak and Medley</a>
+                        </h3>
+
+                        <span class="span title-2">$25.50</span>
+
+                      </div>
+
+                      <p class="card-text label-1">
+                        Experience culinary bliss with our Grilled Steak & Mushroom Medley, featuring a perfectly cooked, tender steak complemented by a medley of sautéed mushrooms. Savor the earthy flavors and rich textures, enhanced by a savory mushroom sauce, creating a sensational dining experience.
+                      </p>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+
+                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                      <img src="./assets/images/menu-4.png" width="100" height="100" 
+                      loading="lazy" alt="Tokusen Wagyu" 
+                        class="img-cover">
+                    </figure>
+
+                    <div>
+
+                      <div class="title-wrapper">
+                        <h3 class="title-3">
+                          <a href="#" class="card-title">Nutty Morning Delight</a>
+                        </h3>
+
+                        <span class="badge label-1">New</span>
+
+                        <span class="span title-2">$12.70</span>
+
+                      </div>
+
+                      <p class="card-text label-1">
+                        Start your day with the ultimate Nutty Morning Delight, a wholesome breakfast bowl packed with a delightful combination of crunchy cereals, a medley of roasted nuts including almonds, walnuts, and cashews, and a sprinkle of sweet raisins for a burst of natural sweetness.
+                      </p>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+
+                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                      <img src="./assets/images/menu-5.png" width="100" height="100" 
+                      loading="lazy" alt="Olivas Rellenas" 
+                        class="img-cover">
+                    </figure>
+
+                    <div>
+
+                      <div class="title-wrapper">
+                        <h3 class="title-3">
+                          <a href="#" class="card-title">Yogurt Parfait & Fresh Fruits</a>
+                        </h3>
+
+                        <span class="span title-2">$15.00</span>
+
+                      </div>
+
+                      <p class="card-text label-1">
+                        Savor our delightful Yogurt Parfait with Fresh Fruits, featuring creamy yogurt layered with juicy strawberries, blueberries, peaches, and kiwi. Topped with crunchy granola, a drizzle of honey, and a sprinkle of mint leaves, it's a heavenly blend of flavors and textures.
+                      </p>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+
+                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                      <img src="./assets/images/menu-6.png" width="100" height="100" 
+                      loading="lazy" alt="Opu Fish" 
+                        class="img-cover">
+                    </figure>
+
+                    <div>
+
+                      <div class="title-wrapper">
+                        <h3 class="title-3">
+                          <a href="#" class="card-title">Multigrain Pancakes</a>
+                        </h3>
+
+                        <span class="span title-2">$10.00</span>
+
+                      </div>
+
+                      <p class="card-text label-1">
+                        Experience breakfast bliss with our Multigrain Nut Pancakes, loaded with juicy blueberries, fresh strawberries, and sliced bananas. Drizzled with golden maple syrup, every bite is a burst of flavor that will leave you craving for more. It's a delightful and energizing way to start your day!
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+              <p class="menu-text text-center">
+                During Winter Daily From <span class="span">8:00 PM</span> to <span 
+                class="span">9:00 PM</span>
+              </p>
+
+              <a href="#" class="btn btn-primary">
+                <span class="text text-1">View All Menu</span>
+
+                <span class="text text-2" aria-hidden="true">View All Menu</span>
+              </a>
+
+              <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy"
+               alt="shape" 
+               class="shape shape-2 move-anim">
+              <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy"
+               alt="shape" 
+               class="shape shape-3 move-anim"> 
+
+            </div>
+          </section>
+
+
+
+          <!---
+            - #TESTIMONIALS
+          -->
+
+
+          <section class="section testi text-center has-bg-image" style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+            <div class="container">
+
+              <div class="quote">”</div>
+
+              <p class="headline-2 testi-text">
+                I have been in the culinary world for over 20 years, and this is the first time I have come across a café that tastes absolutely amazing! 
+                I would like to express my gratitude for inviting me to an unforgettable dinner that night. 
+                The cuisine was exceptional! La La Café is truly fantastic and deserves all the praise it receives.
+              </p>
+
+              <div class="wrapper">
+                <div class="separator"></div>
+                <div class="separator"></div>
+                <div class="separator"></div>
+              </div>
+
+              <div class="profile">
+                <img src="./assets/images/testi-avatar.jpg" width="100" height="100" 
+                loading="lazy" alt="Sam Jhonson" class="img">
+
+                <p class="label-2 profile-name">Juna Rorimpandey</p>
+              </div>
+
+            </div>
+
+          </section>
+
+
+
+          <!---
+            - #RESERVATION
+          -->
+
+
+          <section class="reservation">
+            <div class="container">
+
+              <div class="form reservation-form bg-black-10">
+
+                <form action="" class="form-left">
+
+                  <h2 class="headline-1 text-center">Online Reservation</h2>
+
+                  <p class="form-text text-center">
+                    Reservation Request <a href="tel:+33123123456" class="link">+33-123-123456</a>
+                    or fill out the order form
+                  </p>
+
+                  <div class="input-wrapper">
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="off"
+                     class="input-field">
+                    
+                    <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off"
+                     class="input-field">
+
+
+
+                  </div>
+
+                  <div class="input-wrapper">
+
+                    <div class="icon-wrapper">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <select name="person" class="input-field">
+                        <option value="1-person">1 Person</option>
+                        <option value="2-person">2 Person</option>
+                        <option value="3-person">3 Person</option>
+                        <option value="4-person">4 Person</option>
+                        <option value="5-person">5 Person</option>
+                        <option value="6-person">6 Person</option>
+                        <option value="7-person">7 Person</option>
+                      </select>
+
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div class="icon-wrapper">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <input type="date" name="reservation-date" class="input-field">
+
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div class="icon-wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <select name="person" class="input-field">
+                        <option value="08:00am">08:00 AM</option>
+                        <option value="09:00am">09:00 AM</option>
+                        <option value="010:00am">10:00 AM</option>
+                        <option value="011:00am">11:00 AM</option>
+                        <option value="012:00am">12:00 AM</option>
+                        <option value="01:00pm">01:00 PM</option>
+                        <option value="02:00pm">02:00 PM</option>
+                        <option value="03:00pm">03:00 PM</option>
+                        <option value="04:00pm">04:00 PM</option>
+                        <option value="05:00pm">05:00 PM</option>
+                        <option value="06:00pm">06:00 PM</option>
+                        <option value="07:00pm">07:00 PM</option>
+                        <option value="08:00pm">08:00 PM</option>
+                        <option value="09:00pm">09:00 PM</option>
+                        <option value="10:00pm">10:00 PM</option>
+                      </select>
+
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    
+
+                  </div>
+
+                  <textarea name="message" placeholder="Message" autocomplete="off" 
+                  class="input-field"></textarea>
+
+                  <button type="submit" class="btn btn-secondary">
+                    <span class="text text-1">Book A Table</span>
+
+                    <span class="text text-2" aria-hidden="true">Book A Table</span>
+                  </button>
+
+                </form>
+
+                <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+                  <h2 class="headline-1 text-center">Contact Us</h2>
+
+                  <p class="contact-label">Reservation Request</p>
+
+                  <a href="tel:+33123123456" class="body-1 contact-number hover-underline">
+                    +33-123-123456</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Location</p>
+
+                    <address class="body-4">
+                      La Café, Caffétopia, <br>
+                      Paris 7842, France
+                    </address>
+
+                    <p class="contact-label">Lunch Time</p>
+
+                    <p class="body-4">
+                      Monday - Sunday <br>
+                      10:00 AM - 2:30 PM
+                    </p>
+
+                    <p class="contact-label">Dinner Time</p>
+
+                    <p class="body-4">
+                      Monday - Sunday <br>
+                      05:00 PM - 10:00 PM
+                    </p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+
+
+
+
+
+          <!---
+            - #FEATURES            
+          -->
+
+          <section class="section features text-center" aria-label="features">
+            <div class="container">
+
+              <p class="section-subtitle label-2">Pourquoi Nous Choisir</p>
+
+              <h2 class="headline-1 section-title">Our Strength</h2>
+
+              <ul class="grid-list">
+
+                <li class="feature-item">
+                  <div class="feature-card">
+
+                    <div class="card-icon">
+                      <img src="./assets/images/features-icon-1.png" width="100" height="80" 
+                      loading="lazy" alt="icon">
+                    </div>
+
+
+                    <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                    <p class="label-1 card-text">Our food is meticulously prepared and presented, prioritizing cleanliness and 
+                      safety in every aspect of its production and service.</p>
+
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card">
+
+                    <div class="card-icon">
+                      <img src="./assets/images/features-icon-2.png" width="100" height="80" 
+                      loading="lazy" alt="icon">
+                    </div>
+
+
+                    <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                    <p class="label-1 card-text">In our café, a fresh environment is carefully cultivated, providing a vibrant and 
+                      invigorating atmosphere for a delightful dining experience.</p>
+
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card">
+
+                    <div class="card-icon">
+                      <img src="./assets/images/features-icon-3.png" width="100" height="80" 
+                      loading="lazy" alt="icon">
+                    </div>
+
+
+                    <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                    <p class="label-1 card-text">Within the walls of our esteemed café, a team of highly skilled chefs manifests their culinary prowess. 
+                      With their extensive expertise, they orchestrate a symphony of flavors, 
+                      transforming the finest ingredients into extraordinary dishes that captivate the senses and elevate the dining experience to new heights.</p>
+
+                  </div>
+                </li>
+
+                <li class="feature-item">
+                  <div class="feature-card">
+
+                    <div class="card-icon">
+                      <img src="./assets/images/features-icon-4.png" width="100" height="80" 
+                      loading="lazy" alt="icon">
+                    </div>
+
+
+                    <h3 class="title-2 card-title">Event & Party</h3>
+
+                    <p class="label-1 card-text">We transform your celebrations into unforgettable experiences. Our talented team of chefs crafts exquisite dishes that reflect the spirit of your event, 
+                      from themed menus to personalized creations that leave a lasting impression. 
+                      From intimate gatherings to grand celebrations, we ensure that every bite is a culinary journey that delights the senses and creates cherished memories for you and your guests.</p>
+
+                  </div>
+                </li>
+
+              </ul>
+
+              <img src="./assets/images/shape-7.png" width="208" height="178"
+              loading="lazy" alt="shape" class="shape shape-1">
+
+              <img src="./assets/images/shape-8.png" width="120" height="115"
+              loading="lazy" alt="shape" class="shape shape-2">
+
+            </div>
+          </section>
+
+
+          
+
+
+          <!---
+            - #EVENT
+          -->
+
+          <section class="section event bg-black-10" aria-label="event">
+            <div class="container">
+
+              <p class="section-subtitle label-2 text-center">Mises à jour récentes</p>
+
+              <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+
+              <ul class="grid-list">
+
+                <li>
+                  <div class="event-card has-before hover:shine">
+
+                    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                      <img src="./assets/images/event-1.jpg" width="350" height="450" 
+                      loading="lazy"
+                        alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                      <time class="publish-date label-2" datetime="2003-09-24">24/09/2003</time>
+                    </div>
+
+                    <div class="card-content">
+                      <p class="card-subtitle label-2 text-center">Flavour</p>
+
+                      <h3 class="card-title title-2 text-center">
+                        The flavor is so good you'll try to eat it with your eyes.
+                      </h3>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="event-card has-before hover:shine">
+
+                    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                      <img src="./assets/images/event-2.jpg" width="350" height="450" 
+                      loading="lazy"
+                        alt="Healthy Food" class="img-cover">
+
+                      <time class="publish-date label-2" datetime="2003-03-26">26/03/2003</time>
+                    </div>
+
+                    <div class="card-content">
+                      <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                      <h3 class="card-title title-2 text-center">
+                        Indulge in wholesome, flavorful creations in our café, where nutritious ingredients craft culinary masterpieces for your well-being.
+                      </h3>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="event-card has-before hover:shine">
+
+                    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                      <img src="./assets/images/event-3.png" width="350" height="450" 
+                      loading="lazy"
+                        alt="Recipie" class="img-cover">
+
+                      <time class="publish-date label-2" datetime="2006-12-25">25/12/2006</time>
+                    </div>
+
+                    <div class="card-content">
+                      <p class="card-subtitle label-2 text-center">Recipe</p>
+
+                      <h3 class="card-title title-2 text-center">
+                        Uncover the secret recipes of our café, where culinary wonders are brought to life with every dish.
+                      </h3>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+              <a href="#" class="btn btn-primary">
+                <span class="text text-1">View Our Blog</span>
+
+                <span class="text text-2" aria-hidden="true">View Our Blog</span>
+              </a>
+
+
+            </div>
+          </section>
+
+          
+
+      </article>
+    </main>
+
+
+
+
+    <!---
+      - #FOOTER
+    -->
+
+    <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+      <div class="container">
+
+        <div class="footer-top grid-list">
+
+          <div class="footer-brand has-before has-after">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" 
+                alt="grilli home">
+            </a>
+            
+            <address class="body-4">
+              La Café, Caffétopia, Paris 7842, France
+            </address>
+
+            <a href="mailto:reservation@lalacafe.com" class="body-4 contact-link">reservation@lalacafe.com
+            </a>
+
+            <a href="tel:+33123123456" class="body-4 contact-link">Reservation Request : 
+            +33-123-123456</a>
+
+            <p class="body-4">
+              Open: 8:30 AM - 6:30 PM
+            </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <p class="title-1">Get News & Offers</p>
+
+            <p class="label-1">
+              Subscribe Us & Get <span class="">20% Off!</span>
+            </p>
+
+            <form action="" class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <input type="email" name="email_address" placeholder="Your email" 
+                  autocomplete="off" class="input-field">
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Subscribe</span>
+
+                <span class="text text-2" aria-hidden="true">Subscribe</span>
+              </button>
+            </form>
+
+          </div>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Google Maps</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; 2023 La La Café. All Rights Reserved | Edited by Danny Lee for Educational Purpose and Crafted by <a href="https://github.com/codewithsadee"
+             target="_blank" class="link">codewithsadee</a>
+          </p>
+
+        </div>
+
+      </div>
+    </footer>
+
+
+
+    <!---
+      - #BACK TO THE TOP
+    -->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+
+    <!---
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!---
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
